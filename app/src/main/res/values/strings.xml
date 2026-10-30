@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RoomlyApp</string>
+    <string name="survey_1">How much do you value cleanliness?</string>
+    <string name="survey_2">What is your comfort level with noise?</string>
 </resources>
