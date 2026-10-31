@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/filters">
+        <menu>
+            <item
+                android:id="@+id/nav_hobbies"
+                android:icon="@drawable/happy_face_icon"
+                android:title="@string/hobbies"
+            />
+
+            <item
+                android:id="@+id/nav_tags"
+                android:icon="@drawable/tag_icon"
+                android:title="@string/tags"
+            />
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_radius"
+        android:title="@string/radius">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/radius_5"
+                    android:title="@string/_5_mi"
+                />
+
+                <item
+                    android:id="@+id/radius_15"
+                    android:title="@string/_15_mi"
+                />
+
+                <item
+                    android:id="@+id/radius_25"
+                    android:title="@string/_25_mi"
+                />
+
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/night_mode_Switch"
+        android:title="@string/night_mode"
+        android:icon="@drawable/night_mode_icon"
+        app:actionLayout="@layout/switch_item"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/settings_icon"
+        android:title="@string/settings"
+    />
+</menu>
