@@ -35,7 +35,7 @@ public class HomeFragment extends Fragment {
         Switch nightToggle = nightItem.getActionView().findViewById(R.id.nightModeToggle);
         DrawerLayout drawer = inflatedView.findViewById(R.id.drawerLayout);
 
-
+        //database user data
         String[] names = {
                 "Test", "Test2", "Test3", "Test1BillionTrillion"
         };
@@ -60,10 +60,15 @@ public class HomeFragment extends Fragment {
         rv.setLayoutManager(new LinearLayoutManager(requireContext()));
         rv.setAdapter(new ProfileAdapter(names, locations, tags1, tags2, matches));
 
+        //navigate to chat screen
+        inflatedView.findViewById(R.id.chatButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((MainActivity) requireActivity()).navigateTo(ChatListFragment.class, true);
+            }
+        });
 
-
-
-
+        //night mode
         nightToggle.setChecked(AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES);
         nightToggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -75,6 +80,7 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        //menu buttons
         inflatedView.findViewById(R.id.menuButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
