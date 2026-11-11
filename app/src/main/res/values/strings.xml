@@ -23,4 +23,6 @@
     <string name="_10_mi">10 mi</string>
     <string name="_15_mi">15 mi</string>
     <string name="_25_mi">25 mi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
